@@ -32,6 +32,8 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
         notes: _notesController.text.isEmpty ? null : _notesController.text,
       );
 
+      print(order);
+
       cartProvider.clear();
 
       Navigator.pushReplacement(
